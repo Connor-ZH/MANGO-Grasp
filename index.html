@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KH2GL4833"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0KH2GL4833');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="MachaGrasp: Morphology-Aware Cross-Embodiment Dexterous Hand Articulation Generation for Grasping">
+  <meta name="description" content="We propose morphology-aware learning to generate dexterous hand articulations across different robot embodiments, enabling robust cross-robot generalization.">
+  <meta name="author" content="Heng Zhang, Kevin Y. Ma, Mike Z. Shou, Weisi Lin, and Yan Wu">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MachaGrasp: Morphology-Aware Cross-Embodiment Dexterous Hand Articulation Generation for Grasping">
+  <meta property="og:description" content="Morphology-aware learning for dexterous hand articulation that transfers across embodiments.">
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MachaGrasp: Morphology-Aware Cross-Embodiment Dexterous Hand Articulation Generation for Grasping – Research Preview">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <meta name="twitter:creator" content="@FIRST_AUTHOR_TWITTER">
+  <meta name="twitter:title" content="Cross-Embodiment Dexterous Hand Articulation Generation via Morphology-Aware Learning">
+  <meta name="twitter:description" content="Morphology-aware learning for dexterous hand articulation that transfers across embodiments.">
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="Cross-Embodiment Dexterous Hand Articulation – Research Preview">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>MachaGrasp: Morphology-Aware Cross-Embodiment Dexterous Hand Articulation Generation for Grasping – Zhang, Ma, Shou, Lin, Wu | Academic Research</title>
+
+  <!-- Favicon and App Icons -->
+<!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">-->
+<!--  <link rel="apple-touch-icon" href="static/images/favicon.png">-->
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Cross-Embodiment Dexterous Hand Articulation Generation via Morphology-Aware Learning",
+    "description": "Morphology-aware learning for dexterous hand articulation that transfers across embodiments.",
+    "author": [
+      { "@type": "Person", "name": "Heng Zhang" },
+      { "@type": "Person", "name": "Kevin Y. Ma" },
+      { "@type": "Person", "name": "Mike Z. Shou" },
+      { "@type": "Person", "name": "Weisi Lin" },
+      { "@type": "Person", "name": "Yan Wu" }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": { "@type": "Organization", "name": "CONFERENCE_OR_JOURNAL_NAME" },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["dexterous manipulation", "robot hands", "morphology-aware learning", "grasping", "machine learning", "computer vision"],
+    "abstract": "",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": { "@type": "WebPage", "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE" }
+  }
+  </script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+<!--  &lt;!&ndash; More Works Dropdown &ndash;&gt;-->
+<!--  <div class="more-works-container">-->
+<!--    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab" aria-expanded="false" aria-controls="moreWorksDropdown">-->
+<!--      <i class="fas fa-flask" aria-hidden="true"></i>-->
+<!--      More Works-->
+<!--      <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>-->
+<!--    </button>-->
+<!--    <div class="more-works-dropdown" id="moreWorksDropdown" role="region" aria-label="More works from our lab">-->
+<!--      <div class="dropdown-header">-->
+<!--        <h4>More Works from Our Lab</h4>-->
+<!--        <button class="close-btn" onclick="toggleMoreWorks()" aria-label="Close more works">-->
+<!--          <i class="fas fa-times" aria-hidden="true"></i>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="works-list">-->
+<!--        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank" rel="noopener noreferrer">-->
+<!--          <div class="work-info">-->
+<!--            <h5>Paper Title 1</h5>-->
+<!--            <p>Brief description of the work and its main contribution.</p>-->
+<!--            <span class="work-venue">Conference/Journal 2024</span>-->
+<!--          </div>-->
+<!--          <i class="fas fa-external-link-alt" aria-hidden="true"></i>-->
+<!--        </a>-->
+<!--        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank" rel="noopener noreferrer">-->
+<!--          <div class="work-info">-->
+<!--            <h5>Paper Title 2</h5>-->
+<!--            <p>Brief description of the work and its main contribution.</p>-->
+<!--            <span class="work-venue">Conference/Journal 2023</span>-->
+<!--          </div>-->
+<!--          <i class="fas fa-external-link-alt" aria-hidden="true"></i>-->
+<!--        </a>-->
+<!--        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank" rel="noopener noreferrer">-->
+<!--          <div class="work-info">-->
+<!--            <h5>Paper Title 3</h5>-->
+<!--            <p>Brief description of the work and its main contribution.</p>-->
+<!--            <span class="work-venue">Conference/Journal 2023</span>-->
+<!--          </div>-->
+<!--          <i class="fas fa-external-link-alt" aria-hidden="true"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=nv05NS8AAAAJ" target="_blank" rel="noopener noreferrer">Heng Zhang</a><sup>1,2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://kevinskwk.github.io/#skillset" target="_blank" rel="noopener noreferrer">Kevin Yuchen Ma</a><sup>1,3</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/view/showlab" target="_blank" rel="noopener noreferrer">Mike Zheng Shou</a><sup>3</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://personal.ntu.edu.sg/wslin/" target="_blank" rel="noopener noreferrer">Weisi Lin</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yan-wu.com/" target="_blank" rel="noopener noreferrer">Yan Wu</a><sup>1</sup>
+                </span>
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Robotics & Autonomous Systems Division, Institute for Infocomm Research, Agency for Science, Technology and Research (A*STAR-I2R), Singapore</span>
+                <span class="author-block"><sup>2</sup>College of Computing and Data Science, Nanyang Technological University, Singapore</span>
+                <span class="author-block"><sup>3</sup>Show Lab, National University of Singapore, Singapore</span>
+              </div>
+<!--              <div class="publication-venue">-->
+<!--              <span class="accept-badge" aria-label="Accepted at ICRA 2026">-->
+<!--                <span class="accept-badge__dot" aria-hidden="true"></span>-->
+<!--                Accepted at 2026 IEEE International Conference on Robotics & Automation (ICRA)-->
+<!--              </span>-->
+<!--            </div>-->
+              <div class="column has-text-centered">
+                <div class="publication-links">
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://arxiv.org/pdf/ARXIV_ID.pdf" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span>-->
+<!--                      <span>Paper</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                  <span class="link-block">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="ai ai-arxiv" aria-hidden="true"></i></span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                 <span class="link-block">
+                    <a  target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                      <span>Code (released upon publication)</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a  target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><svg class="svg-inline--fa fa-database fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"></path></svg><!-- <i class="fas fa-database" aria-hidden="true"></i> Font Awesome fontawesome.com --></span>
+                      <span>Data &amp; Checkpoints (released upon publication)</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--    &lt;!&ndash; Teaser video&ndash;&gt;-->
+<!--    <section class="hero teaser">-->
+<!--      <div class="container is-max-desktop">-->
+<!--        <div class="hero-body">-->
+<!--          <video poster="static/images/teaser_poster.jpg" id="teaser-video" autoplay controls muted loop height="100%" preload="metadata" aria-label="Teaser video">-->
+<!--            <source src="static/videos/banner_video.mp4" type="video/mp4">-->
+<!--          </video>-->
+<!--          <h2 class="subtitle has-text-centered">-->
+<!--            Brief teaser description of your method and key results.-->
+<!--          </h2>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+          <video controls preload="metadata" style="width: 100%; height: auto; display: block;">
+            <source src="static/videos/main.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+Cross-embodiment dexterous grasping aims to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their object representations often underrepresent local surface geometry, while their robot descriptors do not explicitly encode both robot morphology and kinematics. We propose MANGO-Grasp, an anisotropic interaction framework that represents objects as geometry-oriented 3D Gaussian primitives and robot hands as surface keypoints encoded into morpho-kinematic descriptors. The object primitives are adaptively allocated by geometric complexity and shaped as surface-aligned plates with outward normals, encoding local geometry. Mahalanobis fields over keypoint-primitive pairs serve as interaction prediction targets during training and as optimization guidance for grasp realization at inference. These fields rise sharply for displacement along the surface normal but only gently within the tangent plane, matching the directional structure of contact. Grasps are realized with one shared optimization formulation and hyperparameter setting across all embodiments. On the CMAP and MultiGripperGrasp benchmarks, MANGO-Grasp outperforms the strongest seen-hand baseline by up to 8.24 percentage points in simulation. It also transfers zero-shot to the unseen SharpaWave hand, improving over the strongest zero-shot baseline by up to 16.57 percentage points, and achieves 86% success in real-world experiments.       </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Method Overview</h2>
+            <div class="content has-text-justified">
+              <img src="static/images/method_overview.jpg" alt="First research result visualization"/>
+            </div>
+            <div class="content has-text-justified">
+              <p>
+    Method overview. The object mesh is converted into a fixed-budget set of surface-aligned, plate-like 3D Gaussian primitives with outward normals. The
+    primitives are then encoded by a stack of local attention blocks, operating
+    on a KNN graph built over primitive centers, followed by global
+    self-attention layers, yielding Object Features. In parallel, initial robot keypoints are encoded by a pretrained robot encoder into morpho-kinematic Robot Descriptors. The Interaction Fields Generator fuses both streams to generate the Mahalanobis fields,
+    which encode the interaction between each robot keypoint and each object
+    primitive: the field value rises rapidly along the
+    surface-normal direction and varies gently within the local tangent plane. The predicted fields then guide optimization from to the final grasp under joint-limit constraints, penetration energy, and self-collision energy.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image carousel -->
+<!--    <section class="hero is-small">-->
+<!--      <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--          <div id="results-carousel-images" class="carousel results-carousel" aria-label="Image results carousel">-->
+<!--            <div class="item">-->
+<!--              <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>-->
+<!--              <h2 class="subtitle has-text-centered">First image description.</h2>-->
+<!--            </div>-->
+<!--            <div class="item">-->
+<!--              <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>-->
+<!--              <h2 class="subtitle has-text-centered">Second image description.</h2>-->
+<!--            </div>-->
+<!--            <div class="item">-->
+<!--              <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>-->
+<!--              <h2 class="subtitle has-text-centered">Third image description.</h2>-->
+<!--            </div>-->
+<!--            <div class="item">-->
+<!--              <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>-->
+<!--              <h2 class="subtitle has-text-centered">Fourth image description.</h2>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+<!--    &lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--    <section class="hero is-small is-light">-->
+<!--      <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--          <h2 class="title is-3">Video Presentation</h2>-->
+<!--          <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--              <div class="publication-video">-->
+<!--                <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" title="Video presentation" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+<section class="hero is-small" style="background-color:#f7f7f7; padding: 3rem 0;">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align:center; margin-bottom: 2rem;">
+        Real World Demos
+      </h2>
+
+      <div class="video-grid">
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Apple real-world grasping demonstration" autoplay>
+            <source src="static/videos/apple.mp4" type="video/mp4">
+            <source src="static/videos/apple.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Apple</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Chips Can real-world grasping demonstration" autoplay>
+            <source src="static/videos/chips_can.mp4" type="video/mp4">
+            <source src="static/videos/chips_can.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Chips Can</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Coke Can real-world grasping demonstration" autoplay>
+            <source src="static/videos/coke_can.mp4" type="video/mp4">
+            <source src="static/videos/coke_can.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Coke Can</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Ketchup Bottle real-world grasping demonstration" autoplay>
+            <source src="static/videos/ketchup_bottle.mp4" type="video/mp4">
+            <source src="static/videos/ketchup_bottle.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Ketchup Bottle</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Rugby Ball real-world grasping demonstration" autoplay>
+            <source src="static/videos/rugby_ball.mp4" type="video/mp4">
+            <source src="static/videos/rugby_ball.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Rugby Ball</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Salt Box real-world grasping demonstration" autoplay>
+            <source src="static/videos/salt_box.mp4" type="video/mp4">
+            <source src="static/videos/salt_box.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Salt Box</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Tomato Soup Can real-world grasping demonstration" autoplay>
+            <source src="static/videos/tomato_soup_can.mp4" type="video/mp4">
+            <source src="static/videos/tomato_soup_can.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Tomato Soup Can</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Scrub Sponge real-world grasping demonstration" autoplay>
+            <source src="static/videos/scrub_sponge.mp4" type="video/mp4">
+            <source src="static/videos/scrub_sponge.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Scrub Sponge</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Spam Can real-world grasping demonstration" autoplay>
+            <source src="static/videos/spam_can.mp4" type="video/mp4">
+            <source src="static/videos/spam_can.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Spam Can</p>
+        </div>
+        <div class="demo-video-card">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Toothpaste Box real-world grasping demonstration" autoplay>
+            <source src="static/videos/tooth_paste_box.mp4" type="video/mp4">
+            <source src="static/videos/tooth_paste_box.mov" type="video/quicktime">
+            Your browser cannot play this video. Please use an H.264 MP4 version.
+          </video>
+          <p class="demo-video-label">Toothpaste Box</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* controls number per row */
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+.video-grid video {
+  width: 100%;
+  max-width: 260px; /* adjust to control video size */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtle hover effect for professionalism */
+
+.demo-video-card {
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+}
+
+.demo-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #000;
+}
+
+.demo-video-label {
+  margin-top: 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.video-grid video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .video-grid video {
+    max-width: 180px;
+  }
+}
+</style>
+
+      <section class="hero is-small" style="background-color:#ffffff; padding: 3rem 0;">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align:center; margin-bottom: 2rem;">
+        Real World Experiment Results
+      </h2>
+
+      <div class="table-container">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Object</th>
+              <th>Success/Trials</th>
+              <th>Success Rate (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Apple</td><td>6/10</td><td>60</td></tr>
+            <tr><td>Tomato Soup Can</td><td>10/10</td><td>100</td></tr>
+            <tr><td>Rugby Ball</td><td>9/10</td><td>90</td></tr>
+            <tr><td>Spam Can</td><td>8/10</td><td>80</td></tr>
+            <tr><td>Ketchup Bottle</td><td>8/10</td><td>80</td></tr>
+            <tr><td>Toothpaste Box</td><td>10/10</td><td>100</td></tr>
+            <tr><td>Chips Can</td><td>8/10</td><td>80</td></tr>
+            <tr><td>Coke Can</td><td>8/10</td><td>80</td></tr>
+            <tr><td>Salt Box</td><td>9/10</td><td>90</td></tr>
+            <tr><td>Scrub Sponge</td><td>10/10</td><td>100</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Average</th>
+              <th>86/100</th>
+              <th style="color:#2b9348;">86</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.results-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.results-table thead {
+  background-color: #bcd2e8;
+  font-weight: bold;
+}
+
+.results-table th, .results-table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #d9e2ec;
+}
+
+.results-table tbody tr:nth-child(even) {
+  background-color: #f1f5fa;
+}
+
+.results-table tfoot {
+  background-color: #e8eef7;
+  font-weight: bold;
+}
+
+.results-table tfoot th {
+  border-top: 2px solid #d9e2ec;
+}
+</style>
+
+    <!-- Paper poster -->
+<!--    <section class="hero is-small is-light">-->
+<!--      <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--          <h2 class="title">Poster</h2>-->
+<!--          <iframe src="static/pdfs/sample.pdf" width="100%" height="550" title="Paper poster PDF"></iframe>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <!-- BibTeX citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard" aria-label="Copy BibTeX to clipboard">
+            <i class="fas fa-copy" aria-hidden="true"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>TBD</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Statcounter tracking code (optional) -->
+</body>
+</html>
