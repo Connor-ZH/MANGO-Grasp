@@ -784,6 +784,89 @@ a:focus {
   box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
 }
 
+/* Project demo and results sections */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
 
+.video-grid video {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.demo-video-card {
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+}
 
+.demo-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #000;
+}
+
+.demo-video-label {
+  margin-top: 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.video-grid video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .video-grid video {
+    max-width: 180px;
+  }
+}
+
+.results-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.results-table thead {
+  background-color: #bcd2e8;
+  font-weight: bold;
+}
+
+.results-table th, .results-table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #d9e2ec;
+}
+
+.results-table tbody tr:nth-child(even) {
+  background-color: #f1f5fa;
+}
+
+.results-table tfoot {
+  background-color: #e8eef7;
+  font-weight: bold;
+}
+
+.results-table tfoot th {
+  border-top: 2px solid #d9e2ec;
+}
