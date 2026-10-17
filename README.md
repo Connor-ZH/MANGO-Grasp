@@ -1,80 +1,70 @@
-# Academic Project Page Template
+# MANGO-Grasp
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+**Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping**
 
-A clean, responsive template for academic project pages.
+Heng Zhang, Kevin Yuchen Ma, Mike Zheng Shou, Weisi Lin, and Yan Wu.
 
+[Project page](https://connor-zh.github.io/MANGO-Grasp/) · [arXiv preprint](https://arxiv.org/abs/2608.02014) · [Video](https://www.youtube.com/watch?v=pAtVOlEqN5k)
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+MANGO-Grasp models hand–object interaction with anisotropic Mahalanobis fields over geometry-oriented 3D Gaussian primitives. Pretrained morpho-kinematic hand descriptors and a shared grasp optimization support cross-embodiment dexterous grasping, including zero-shot transfer to an unseen hand.
 
+## Publication and release status
 
+The paper is available as a 2026 arXiv preprint and has not yet been formally published. This repository currently contains the project website. The research code, data, and checkpoints will be released upon publication; the corresponding website controls remain disabled until those resources are available.
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Website files and local preview
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+- `index.html`: paper content, citation metadata, Open Graph, Twitter Card, and JSON-LD.
+- `static/css/index.css`: project styles.
+- `static/js/index.js`: page interactions.
+- `static/images/method_overview.jpg`: the method figure.
+- `static/videos/*.mp4`: ten real-world grasping demonstrations.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+No build step is required. From the repository root, run:
 
-## What's New
+```sh
+python3 -m http.server 8000
+```
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+Then open <http://localhost:8000/>.
 
-## Components
+## Metadata and deployment
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
+The deployed URL is <https://connor-zh.github.io/MANGO-Grasp/>. It returned HTTP 200 with HTML identical to commit `60eacca19555d009423f0caf59ededcead2dcfb6` when checked on October 17, 2026; the arXiv abstract also links to this address. If the site moves, update the canonical URL, `og:url`, JSON-LD page URLs, and this README together.
 
-## Customization
+Keep the visible title and authors, BibTeX, citation tags, social metadata, and JSON-LD consistent. The citation year is the preprint's year, 2026. `citation_online_date` records the verified arXiv posting date, August 3, 2026. Neither field asserts journal publication. JSON-LD intentionally omits a formal publication date, publisher, and paper license until those details are confirmed. Template attribution and website licensing below do not establish a license for the paper or unreleased research code.
 
-The HTML file has TODO comments showing what to replace:
+No local paper PDF is committed, so no `citation_pdf_url` is advertised. The arXiv link remains the paper access point. If a local PDF is added later, verify its contents and public URL before adding the PDF metadata.
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
+### Social sharing image
 
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
+There is currently no dedicated share image. The broken `social_preview.png` references have been removed, and Twitter uses a `summary` card without an explicit thumbnail. Open Graph likewise has no explicit image; a platform may choose its own fallback.
 
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
+To enable an explicit large-image preview:
 
-## Tips
+1. Add an approved PNG or JPEG, for example a 1200 × 630 image, to `static/images/`.
+2. Verify that its absolute URL under the deployed site returns an image successfully.
+3. Add matching `og:image` and `twitter:image` tags, descriptive alt text, and the image's actual dimensions. Switch `twitter:card` to `summary_large_image`.
+4. Check the deployed page in the intended sharing platforms; local HTML checks cannot verify their cached previews.
 
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+The existing method figure is 8572 × 3698 pixels and is retained as the full-resolution paper figure. It has not been repurposed as a social card. Twitter account tags remain omitted until real account handles are supplied.
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+## Citation
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+```bibtex
+@misc{zhang2026mangograspmahalanobisfieldsgeometryoriented,
+  title={MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping},
+  author={Heng Zhang and Kevin Yuchen Ma and Mike Zheng Shou and Weisi Lin and Yan Wu},
+  year={2026},
+  eprint={2608.02014},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2608.02014},
+}
+```
+
+## Website attribution and license
+
+This website uses the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template), adapted from [Nerfies](https://nerfies.github.io/).
+
+The website template's existing [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/) is retained. Bundled third-party assets retain their own license notices.
